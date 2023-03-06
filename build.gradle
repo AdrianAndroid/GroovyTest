@@ -13,6 +13,10 @@ dependencies {
     implementation 'org.apache.groovy:groovy:4.0.2'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    implementation 'org.apache.poi:poi:4.1.2'
+    implementation 'org.apache.poi:poi-ooxml:4.1.2'
+    implementation 'com.google.cloud:google-cloud-translate:1.96.0'
 }
 
 test {

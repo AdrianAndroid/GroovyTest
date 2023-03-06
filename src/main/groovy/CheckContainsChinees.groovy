@@ -1,12 +1,10 @@
-import org.apache.groovy.parser.antlr4.util.StringUtils
-
 import java.util.regex.Matcher
 import java.util.regex.Pattern
 
 class CheckContainsChinees {
     static void main(String[] args) {
         println "hello world!"
-        iteratorFiles(new File("/Users/apus/apus/TargetCleaner/app/src/main/assets"))
+        iteratorFiles(new File("/Users/apus/apus/TargetCleaner"))
     }
 
     static def iteratorFiles(File file) {
@@ -16,8 +14,8 @@ class CheckContainsChinees {
             }
         } else if(file.isFile()) {
             String fileName = file.getName()
-            if (fileName.endsWith(".json")) {
-                println file.getAbsolutePath()
+            if (fileName.endsWith("data.json")) {
+                println ">>>>>>>>>>>loading>>>>>>>>" + file.getAbsolutePath()
                 dealWithJson(file)
             }
         }
@@ -45,13 +43,13 @@ class CheckContainsChinees {
      */
     public static boolean isContainChinese(String str) {
 //        if (StringUtils.isEmpty(str)) {
-//            throw new Exception("sms context is empty!");
+//            throw new Exception("sms context is empty!")
 //        }
-        Pattern p = Pattern.compile("[\u4E00-\u9FA5|\\！|\\，|\\。|\\（|\\）|\\《|\\》|\\“|\\”|\\？|\\：|\\；|\\【|\\】]");
-        Matcher m = p.matcher(str);
+        Pattern p = Pattern.compile("[\u4E00-\u9FA5|\\！|\\，|\\。|\\（|\\）|\\《|\\》|\\“|\\”|\\？|\\：|\\；|\\【|\\】]")
+        Matcher m = p.matcher(str)
         if (m.find()) {
-            return true;
+            return true
         }
-        return false;
+        return false
     }
 }
