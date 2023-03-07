@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59932834-d953-49c4-b220-0e89480f25fc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/translate/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/translate/TestBak.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/translate/baidu/BaiduTransApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/translate/google/GoogleConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/translate/google/GoogleTransApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/translate/google/TestGoogle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/translate/BaiduConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/translate/baidu/BaiduConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/translate/HttpGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/translate/HttpGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/translate/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/translate/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/translate/TestOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/translate/TestOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/translate/TransApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/translate/TransApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +32,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -58,23 +70,30 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.translate" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestOptions">
-    <configuration name="ExcelReadTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ExcelReadTest" />
-      <module name="GroovyTest.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Test">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.translate.Test" />
       <module name="GroovyTest.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.translate.bean.*" />
+          <option name="PATTERN" value="com.translate.baidu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGoogle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.translate.google.TestGoogle" />
+      <module name="GroovyTest.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.translate.google.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,7 +106,7 @@
       <module name="GroovyTest.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.translate.*" />
+          <option name="PATTERN" value="com.translate.baidu.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestGoogle" />
         <item itemvalue="Application.TestOptions" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.TranslateDemo" />
         <item itemvalue="Application.WriteExcelTest" />
-        <item itemvalue="Application.ExcelReadTest" />
       </list>
     </recent_temporary>
   </component>
@@ -156,13 +175,32 @@
       <option name="project" value="LOCAL" />
       <updated>1678159762155</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加参数解析,但先不应用">
+      <created>1678160226587</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678160226587</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="检测中文的脚本" />
     <MESSAGE value="添加百度API" />
     <MESSAGE value="翻译" />
-    <option name="LAST_COMMIT_MESSAGE" value="翻译" />
+    <MESSAGE value="添加参数解析,但先不应用" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加参数解析,但先不应用" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/translate/google/GoogleTransApi.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

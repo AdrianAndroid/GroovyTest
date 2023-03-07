@@ -1,26 +1,13 @@
-package com.translate;
+package com.translate.baidu;
+
+import com.translate.Config;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class BaiduConfig {
+public class BaiduConfig implements Config {
 
-    //values-de	values-es	values-fr	values-in	values-it	values-ja	values-ko	values-ms	values-pt	values-th
-    public static final String VALUES = "values";//默认语言
-    public static final String VALUES_EN = "values-en";//默认语言
-    public static final String VALUES_AR = "values-ar"; // 阿拉伯语
-    public static final String VALUES_DE = "values-de"; // 德语
-    public static final String VALUES_ES = "values-es"; // 西班牙语
-    public static final String VALUES_FR = "values-fr"; // 法语
-    public static final String VALUES_IN = "values-in"; // 印尼语
-    public static final String VALUES_IT = "values-it"; // 意大利语
-    public static final String VALUES_JA = "values-ja"; // 日语
-    public static final String VALUES_KO = "values-ko"; // 韩语
-    public static final String VALUES_MS = "values-ms"; // 马来语
-    public static final String VALUES_PT = "values-pt"; // 葡萄牙语
-    public static final String VALUES_TH = "values-th"; // 泰语
-
-    public static final Map<String, String> TRANS_MAP = new HashMap<>();
+    private static final Map<String, String> TRANS_MAP = new HashMap<>();
 
     // http://api.fanyi.baidu.com/product/113
     static {
@@ -38,7 +25,10 @@ public class BaiduConfig {
         TRANS_MAP.put(VALUES_TH, "th");
     }
 
-
+    @Override
+    public String getTransApi(String from) {
+        return TRANS_MAP.getOrDefault(from, "");
+    }
 }
 //中文首字母	名称	代码	语种检测	名称	代码	语种检测	名称	代码	语种检测
 //A	阿拉伯语	ara	是	爱尔兰语	gle	是	奥克语	oci	是
