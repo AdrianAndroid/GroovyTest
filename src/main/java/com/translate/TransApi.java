@@ -21,6 +21,11 @@ public class TransApi {
 
     //葡萄牙语{"from":"en","to":"pt","trans_result":[{"src":"Hello world!","dst":"Ol\u00e1 mundo!"}]}
     public String getTransResultString(String query, String from, String to) {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         String json = getTransResult(query, from, to);
         System.out.println(json);
         JSONParser parser = new JSONParser();
