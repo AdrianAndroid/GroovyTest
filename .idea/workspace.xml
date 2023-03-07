@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59932834-d953-49c4-b220-0e89480f25fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/translate/TestOptions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/translate/bean/DefaultValueKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/translate/bean/ValueIndexDir.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/translate/BaiduConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/translate/BaiduConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/translate/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/translate/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/translate/TransApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/translate/TransApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/translate/TestOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/translate/TestOptions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,12 +149,20 @@
       <option name="project" value="LOCAL" />
       <updated>1678110951055</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="翻译">
+      <created>1678159762155</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678159762155</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="检测中文的脚本" />
     <MESSAGE value="添加百度API" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加百度API" />
+    <MESSAGE value="翻译" />
+    <option name="LAST_COMMIT_MESSAGE" value="翻译" />
   </component>
 </project>

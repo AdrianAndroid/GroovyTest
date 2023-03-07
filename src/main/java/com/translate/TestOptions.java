@@ -6,7 +6,8 @@ import joptsimple.OptionSet;
 import java.util.List;
 
 public class TestOptions {
-
+    //https://cloud.google.com/translate/docs/languages?hl=zh-cn
+    //
     // java MyCmdLineTool -Duser.name=alice --input=input.txt --output=output.txt
     public static void main(String[] args) {
         OptionParser parser = new OptionParser();
